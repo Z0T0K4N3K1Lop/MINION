@@ -15,59 +15,69 @@ print "login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-helpMessage =""" Chivas Bot
-[Id︎]
-[Mid]
-[Me︎]
-[TL︎:「Text」]
-[Mc 「mid」]
-[K on/off]
-[Join︎ on/off]
-[Gcancel:︎「Number of people」]
-[Group cancelalll︎]
-[Leave︎ on/off]
-[Add on/off]
-[Share on/off]
-[Message change:「text」]
-[Message check]
-[Confirm]
-[Jam on/off]
-[Change clock:「name」]
-[Up]
-[Cv join]
+helpMessage =""" ||▂▂[KANEKI SELFBOT]▂▂||
 
-[*] Command in the groups [*]
+♛Id︎
+♛Mid
+♛Me︎
+♛TL︎:「Text」
+♛Mc 「mid」
+♛K on/off
+♛Join︎ on/off
+♛Gcancel:︎「Number of people」
+♛Group cancelalll︎
+♛Leave︎ on/off
+♛Add on/off
+♛Share on/off
+♛Message change:「text」
+♛Message check
+♛Confirm
+♛Jam on/off
+♛Change clock:「name」
+♛Up
+♛Wkwkw
+♛Welcome
+♛Galau
+♛Hmm
 
-[Curl]
-[Ourl]
-[url]
-[url:「Group ID」]
-[Invite：「mid」]
-[Kick：「mid」]
-[Ginfo]
-[jointicket]
-[Cancel]
-[Gn 「group name」]
-[Nk 「name」]
+☠ C͟͟͟͞͞͞o͟͟͟͞͞͞m͟͟͟͞͞͞m͟͟͟͞͞͞a͟͟͟͞͞͞n͟͟͟͞͞͞d͟͟͟͞͞͞ F͟͟͟͞͞͞o͟͟͟͞͞͞r͟͟͟͞͞͞ G͟͟͟͞͞͞r͟͟͟͞͞͞o͟͟͟͞͞͞u͟͟͟͞͞͞p͟͟͟͞͞͞ ☠
 
-[*] Command kicker only [*]
+❁Curl
+❁Ourl
+❁url
+❁Gurl:「Group ID」
+❁Invite：「mid」
+❁Kick：「mid」
+❁Ginfo
+❁jointicket
+❁Cancel
+❁Gn 「group name」
+❁Nk 「name」
+❁Kuy
+❁Pulang
+❁Response
+❁Auto share:on/off
+❁Comment:on/off
+❁Link on/off
+❁Auto leave:on/off
 
-[Bye]
-[Kill ban]
-[Kill 「@」]
-[Ban 「@」] By Tag
-[Unban 「@」] By Tag
-[Ban︎] Share Contact
-[Unban︎] Share Contact
-[Banlist︎]
-[Cek ban]
-[Cv mid]
-[Cv ︎invite:「mid」]
-[Cv ︎rename:「name」]
-[Cv ︎gift]
-[Respo︎n]
-[Bot cancel]
-[Title:]
+☠ C͟͟͟͞͞͞o͟͟͟͞͞͞m͟͟͟͞͞͞m͟͟͟͞͞͞a͟͟͟͞͞͞n͟͟͟͞͞͞d͟͟͟͞͞͞ F͟͟͟͞͞͞o͟͟͟͞͞͞r͟͟͟͞͞͞ S͟͟͟͞͞͞p͟͟͟͞͞͞e͟͟͟͞͞͞s͟͟͟͞͞͞i͟͟͟͞͞͞a͟͟͟͞͞͞l͟͟͟͞͞͞ ☠ 
+
+☢Kill ban
+☢Kill 「@」
+☢Ban 「@」] By Tag
+☢Unban 「@」 By Tag
+☢Ban︎] Share Contact
+☢Unban︎] Share Contact
+☢Banlist︎
+☢Cek ban
+☢Bot cancel
+☢
+☢
+☢
+☢
+☢
+☢
 """
 KAC=[cl,ki,kk,kc]
 mid = cl.getProfile().mid
@@ -110,6 +120,145 @@ wait2 = {
 setTime = {}
 setTime = wait2['setTime']
 
+contact = cl.getProfile()
+backup = cl.getProfile()
+backup.displayName = contact.displayName
+backup.statusMessage = contact.statusMessage
+backup.pictureStatus = contact.pictureStatus
+
+def mention(to,nama):
+    aa = ""
+    bb = ""
+    strt = int(0)
+    akh = int(0)
+    nm = nama
+    print nm
+    for mm in nama:
+      akh = akh + 3
+      aa += """{"S":"""+json.dumps(str(strt))+""","E":"""+json.dumps(str(akh))+""","M":"""+json.dumps(mm)+"},"""
+      strt = strt + 4
+      akh = akh + 1
+      bb += "@x \n"
+    aa = (aa[:int(len(aa)-1)])
+    msg = Message()
+    msg.to = to
+    msg.from_ = profile.mid
+    msg.text = bb
+    msg.contentMetadata ={'MENTION':'{"MENTIONEES":['+aa+']}','EMTVER':'4'}
+    print msg
+    try:
+       cl.sendMessage(msg)
+    except Exception as error:
+        print error
+
+def upload_tempimage(client):
+    '''
+        Upload a picture of a kitten. We don't ship one, so get creative!
+    '''
+
+    # Here's the metadata for the upload. All of these are optional, including
+    # this config dict itself.
+    config = {
+        'album': album,
+        'name':  'bot auto upload',
+        'title': 'bot auto upload',
+        'description': 'bot auto upload'
+    }
+
+    print("Uploading image... ")
+    image = cl.upload_from_path(image_path, config=config, anon=False)
+    print("Done")
+    print()
+
+    return image
+
+def sendImage(self, to_, path):
+    M = Message(to=to_, text=None, contentType = 1)
+    M.contentMetadata = None
+    M.contentPreview = None
+    M2 = self._client.sendMessage(0,M)
+    M_id = M2.id
+    files = {
+       'file': open(path, 'rb'),
+    }
+    params = {
+       'name': 'media',
+       'oid': M_id,
+       'size': len(open(path, 'rb').read()),
+       'type': 'image',
+       'ver': '1.0',
+    }
+    data = {
+       'params': json.dumps(params)
+    }
+    r = self.post_content('https://obs-sg.line-apps.com/talk/m/upload.nhn', data=data, files=files)
+    if r.status_code != 201:
+       raise Exception('Upload image failure.')
+    return True
+
+def sendImage2(self, to_, path):
+    M = Message(to=to_,contentType = 1)
+    M.contentMetadata = None
+    M.contentPreview = None
+    M_id = self._client.sendMessage(M).id
+    files = {
+       'file': open(path, 'rb'),
+    }
+    params = {
+       'name': 'media',
+       'oid': M_id,
+       'size': len(open(path, 'rb').read()),
+       'type': 'image',
+       'ver': '1.0',
+    }
+    data = {
+       'params': json.dumps(params)
+    }
+    r = cl.post_content('https://os.line.naver.jp/talk/m/upload.nhn', data=data, files=files)
+    if r.status_code != 201:
+       raise Exception('Upload image failure.')
+    return True
+
+def sendImageWithURL(self, to_, url):
+    path = '%s/pythonLine-%i.data' % (tempfile.gettempdir(), randint(0, 9))
+    r = requests.get(url, stream=True)
+    if r.status_code == 200:
+       with open(path, 'w') as f:
+          shutil.copyfileobj(r.raw, f)
+    else:
+       raise Exception('Download image failure.')
+    try:
+       self.sendImage(to_, path)
+    except:
+       try:
+        self.sendImage(to_, path)
+       except Exception as e:
+          raise e
+def findMusic(to,song):
+    params = {'songname':song}
+    r = requests.get('https://ide.fdlrcn.com/workspace/yumi-apis/joox?'+urllib.urlencode(params))
+    data = r.text
+    data = data.encode('utf-8')
+    data = json.loads(data)
+    for song in data:
+        ki.sendText(to,"This Your Music.\n\nJudul: " + song[0] + "\nWaktu: " + song[1] + "\nLink: " + song[3] + "\nDownload: " + song[4])
+    time.sleep(100)
+thread2 = threading.Thread(target=findMusic)
+thread2.daemon = True
+thread2.start()
+
+def findLyric(to,song):
+    params = {'songname':song}
+    r = requests.get('https://ide.fdlrcn.com/workspace/yumi-apis/joox?'+urllib.urlencode(params))
+    data = r.text
+    data = data.encode('utf-8')
+    data = json.loads(data)
+    for song in data:
+        ki.sendText(to,"Lyrics Of " + song[0] + ":\n\n"+ song[5])
+    time.sleep(100)
+thread2 = threading.Thread(target=findLyric)
+thread2.daemon = True
+thread2.start()
 
 def sendMessage(to, text, contentMetadata={}, contentType=0):
     mes = Message()
