@@ -6,29 +6,29 @@ from datetime import datetime
 from bs4 import BeautifulSoup
 import time, random, sys, re, os, json, subprocess, threading, string, codecs, requests, tweepy, ctypes, urllib, urllib2, wikipedia,tempfile,glob,shutil,unicodedata,goslate
 
-#tinkerbell
+#Mr X
 cl = LINETCR.LINE()
-cl.login(token="Emo3uIAjUb1XTRWWz62a.v5QHHCvKHcd5tZgpvffGAG.DIfa2XhvhMYJzp9i7JE+Q45p4uZl6oXhbkKVkHlxb3A=")
+cl.login(token="EnQtcXF8Da5pdHS5nrbb.X3+sw1N25wpytXm08+7rcW.oHRsR1eKTfwLHbiLTd1pp8K9AUxvQ5y//koUEosxbiA=")
 cl.loginResult()
-#vidia
+#NONAME
 kt = LINETCR.LINE()
-kt.login(token="EmcHKy7OJP3IChWh89o7.w2t8Z9Xjv6gelJSDmXaO9W.kOJqwINfM0b5vU/Ocd3Op8uggQ8fmC9YIrcc8RJotjI=")
+kt.login(token="EnCTNh4MU3Y9lUCy39rf.VhUBCNkLBNBEY+aAw6H0ZW.LpKAP5EFi4Tk46FilKnathQMY6QMsDHd+fIyAMEjVuQ=")
 kt.loginResult()
-#rosetta
+#NONAME
 ks = LINETCR.LINE()
-ks.login(token="EmxkNlZXeYujhwzsihX4.sGaMXmjviJMROq5S4Cc39a.y4PKP22mOaCCA1aqFRLgrFI3zzzOhfWREzUhV0eK8iw=")
+ks.login(token="EnEAedLdibLoONaMGnK6.Zg2BQYNPKl2ksz44ZIytHG.DN8ar+4Il2MgVoaQ2Z53eFn3uUIEhk3iiPEpbwWPfBk=")
 ks.loginResult()
 #sirvelmist
 ki = LINETCR.LINE()
-ki.login(token="EmLT4QmZDTOhuT3YWa8e.6xqhRUmgRAnJkNHgUf9pRG.cYeoV8xeMhVTFMGG+QWH1qaVB6vmO0kcF5z0yVr4dGE=")
+ki.login(token="EnutRFKDWhrhTfkmXbo6.lEc1JaEVsI3l5xpWt5mAnG.x3HmElMPxHJz4X7H3hYa8KqEoaiNFIeDfFdRAGtP91Q=")
 ki.loginResult()
-#fawn
+#NONAME
 kk = LINETCR.LINE()
-kk.login(token="Em12iy3uGiMtThUdUeF0.1fr9c+yGB9KiIPMXgRT+aa.X7rZOQsgp+nDs2Xx5tJJ9Z6HGyfI+Mo347UPGpoCsx0=")
+kk.login(token="EnVpepsOV5mXyKu0QfZ6.muq18IWfKt5SEgFXA9fxfG.g0jDSEPT2yonBE4Xr9Ois1Se98T1Wyc7Xmt6l3Qf+CY=")
 kk.loginResult()
-#iridessa
+#NONAME
 kc = LINETCR.LINE()
-kc.login(token="EmcRs7TR2ZTODz50pVq9.uxyX0wPToHk+Po1M6IzIIq.+2sr01OPoP41ner8K4FDgth0WhL9ye+o+wKhrHV/bHw=")
+kc.login(token="EncsNNIon04D5fsfBLK7./hD97gr5Xe1yxI05XUWpLW.DS9b4TgUIkCkYuRyCHpR3WYlbk7BQYMeJQFgwbyM9kg=")
 kc.loginResult()
 
 #kicker ghost
@@ -36,190 +36,141 @@ kc.loginResult()
 #kl.login(token="")
 #kl.loginResult()
 
-print "Tamii Bot"
+print "BII BOT"
 reload(sys)
 sys.setdefaultencoding('utf-8')
-helpMessage= """\n
-=======================
-  ✩★BOT COMMANDS★✩
-=======================\n
-★ MODIFIER ★
-● Bot1 rename:[text]
-● Bot2 rename:[text]
-● Bot3 rename:[text]
-● Bot4 rename:[text]
-● Bot5 rename:[text]
-● Bot6 rename:[text]
-● All rename:[text]
-● Allbio:[text]
-● Bot1 clone @[name]
-● Bot2 clone @[name]
-● Bot3 clone @[name]
-● Bot4 clone @[name]
-● Bot5 clone @[name]
-● Bot6 clone @[name]
-● Comment:[text]
-● Message:[text]
-● Bot1-6 backup run
-● Bot1-6 backup
-● Group name:[text]
+helpMessage= """  ===[KANEKI SELFBOT V2]===
 
-★ PROMOTE/DEMOTE ★
-● Admin on @[name]
-● Expel on @[name]
-● Expelall
+☠ C͟͟͟͞͞͞o͟͟͟͞͞͞m͟͟͟͞͞͞m͟͟͟͞͞͞a͟͟͟͞͞͞n͟͟͟͞͞͞d͟͟͟͞͞͞ F͟͟͟͞͞͞o͟͟͟͞͞͞r͟͟͟͞͞͞ S͟͟͟͞͞͞e͟͟͟͞͞͞l͟͟͟͞͞͞f͟͟͟͞͞͞b͟͟͟͞͞͞o͟͟͟͞͞͞t͟͟͟͞͞͞  ☠
 
-★ STEALING ★
-● Steal name    @[name]
-● Steal Bio     @[name]
-● Steal status  @[name]
-● Steal mid     @[name]
-● Steal contact @[name]
-● Steal cover   @[name]
-● Steal pict    @[name]
-● Steal group pict
-● Midpict:[mid]
+✍ Me
+✍ Myid
+✍ TL [ TEXT ]
+✍ Help
+✍ Bot mid
+✍ Bot contact
+✍ Creator
+✍ Gcreator
+✍ Halo
+✍ Mc [ MID ]
+✍ Cpu
+✍ Karnel
+✍ Responsename
+✍ iconfig
+✍ System
 
-★ GUARD MODE ★
-● Protect:low
-● Protect:hight
+☠ C͟͟͟͞͞͞o͟͟͟͞͞͞m͟͟͟͞͞͞m͟͟͟͞͞͞a͟͟͟͞͞͞n͟͟͟͞͞͞d͟͟͟͞͞͞ F͟͟͟͞͞͞o͟͟͟͞͞͞r͟͟͟͞͞͞ G͟͟͟͞͞͞r͟͟͟͞͞͞o͟͟͟͞͞͞u͟͟͟͞͞͞p͟͟͟͞͞͞  ☠
 
-★ MARK TO LIST ★
-● Ban    @[name]
-● Unban  @[name]
-● Banned[send contact]
-● Unbanned[send contact]
-● Ban repeat @[name]
-● Clear banlist
-● Mimic target @[name]
-● Mimic untarget @[name]
-● Add friend @[name]
+◙ Lurking
+◙ Lurking Result
+◙ Link open/close 
+◙ Remove chat
+◙ Ginfo
+◙ Group list
+◙ Cleanse
+◙ Vkick @
+◙ Nk [name]
+◙ Kick:[mid]
+◙ Purge
+◙ Comment: [TEXT]
+◙ Message: [TEXT]
+◙ Ban    @[name]
+◙ Unban  @[name]
+◙ Banned[send contact]
+◙ Unbanned[send contact]
+◙ Ban repeat @[name]
+◙ Clear banlist
 
-★ INVITATION ★
-● Invite:[mid]
-● Invite user[contact]
-● Invite me
-● Team @join
 
-★ LEAVE GROUP ★
-● Bot2   @bye
-● Bot3   @bye
-● Bot4   @bye
-● Bot5   @bye
-● Bot6   @bye
-● Team   @bye
-● Center @bye
-● Bye allgroups[own]
+☠ C͟͟͟͞͞͞o͟͟͟͞͞͞m͟͟͟͞͞͞m͟͟͟͞͞͞a͟͟͟͞͞͞n͟͟͟͞͞͞d͟͟͟͞͞͞ F͟͟͟͞͞͞o͟͟͟͞͞͞r͟͟͟͞͞͞ C͟͟͟͞͞͞r͟͟͟͞͞͞e͟͟͟͞͞͞a͟͟͟͞͞͞t͟͟͟͞͞͞o͟͟͟͞͞͞r͟͟͟͞͞͞  ☠
 
-★ BOT AUTO SETTINGS ★
-● Auto join:on/off
-● Auto leave:on/off
-● Auto like:on/off
-● Welcome message:on/off
-● Auto notice:on/off
-● Blockinvite:on/off
-● Auto blockqr:on/off
-● Namelock:on/off
-● Mimic:on/off
-● Auto add:on/off
-● Check message
-● Add message:[text]
-● Comment:on/off
-● Add comment:[text]
-● Check comment
-● Backup:on/off
-● Gcancel:[number]
-● Update welcome:[text]
-● Check welcome message
+♛ Steal name By Tag @
+♛ Steal Bio  By Tag @ 
+♛ Steal status  By Tag @
+♛ Steal mid     By Tag @
+♛ Steal contact By Tag @
+♛ Steal cover   By Tag @
+♛ Steal pict    By Tag @
+♛ Steal group pict
+♛ Midpict: By Mid
+♛ Admin on By Tag @
+♛ Expel on By Tag @
+♛ Expelall
+♛ Group name: [text]
+♛ Mimic:on/off
+♛ Mimic list
+♛ Mimic target By Tag @
+♛ Mimic untarget By Tag @
+♛ Invite:[mid]
+♛ Invite user[contact]
+♛ Invite me
+♛ Team @join
+♛ Spamg on/off
+♛ Spam add:[text]
+♛ Spam change:[text]
+♛ Spam start:[number]
 
-★ CANCEL MODE ★
-● Rejectall
-● Clean invites
-● Clear invites
+C͟͟͟͞͞͞o͟͟͟͞͞͞m͟͟͟͞͞͞m͟͟͟͞͞͞a͟͟͟͞͞͞n͟͟͟͞͞͞d͟͟͟͞͞͞ F͟͟͟͞͞͞o͟͟͟͞͞͞r͟͟͟͞͞͞ S͟͟͟͞͞͞p͟͟͟͞͞͞e͟͟͟͞͞͞c͟͟͟͞͞͞i͟͟͟͞͞͞a͟͟͟͞͞͞l͟͟͟͞͞͞ M͟͟͟͞͞͞R͟͟͟͞͞͞ X͟͟͟͞͞͞ 
 
-★ SUPRISE GIFT ★
-● gift1-15
-● Spam gift
+☬ Auto join:on/off
+☬ Auto leave:on/off
+☬ Auto like:on/off
+☬ Welcome message:on/off
+☬ Auto notice:on/off
+☬ Blockinvite:on/off
+☬ Auto blockqr:on/off
+☬ Namelock:on/off
+☬ Auto add:on/off
+☬ Check message
+☬ Add message:[text]
+☬ Comment:on/off
+☬ Add comment:[text]
+☬ Check comment
+☬ Backup:on/off
+☬ Gcancel:[number]
+☬ Update welcome:[text]
+☬ Check welcome message
+☬ Protect:on/off
+☬ Spam gift
+☬ Lyric [][]
+☬ Music [][]
+☬ Wiki [text]
+☬ Vidio [text]
+☬ Youtube [text]
+☬ Instagram [text]
+☬ Translate-idn [text]
+☬ Translate-eng [text]
+☬ Translate-thai [text]
+☬ Translate-japan [text]
+☬ Emoji [expression]
+☬ Info @[name]
+☬ Ping
+☬ Time
+☬ apakah [kerang ajaib]
+☬ Sticker [expression]
+☬ Mention all
+☬ Pm cast   [text]
+☬ Broadcast [text]
+☬ Spam @[name]
+☬ Turn off bots
+☬ Settings
+☬ Clean invites
+☬ Allrename: [TEXT]
+☬ Allbio: [TEXT]
+☬ Bot1-6 clone By Tag
+☬ Comment:[text]
+☬ Message:[text]
+☬ Bot1-6 backup run
+☬ Bot1-6 backup
+☬ Bot-6 Bye
+☬ Team @Bye
+☬ Team @Join
 
-★ NOTIFICATION LIST ★
-● Group list
-● Banlist
-● Admin list
-● Settings
-● Ginfo
-● TL:[text]
-● Mimic list
 
-★ KICKER MODE ★
-● Cleanse
-● Vkick @
-● Nk [name]
-● Kick:[mid]
-● Purge
+K̲̱̠̞̖ͧ̔͊̿̑ͯͅA̘̫͈̭͌͛͌̇̇̍N͉̠̙͉̗̺̋̔ͧ̊E̮̟͈̣̖̰̩̹͈̾ͨ̑͑K̲̱̠̞̖ͧ̔͊̿̑ͯͅI̞̟̫̺ͭ̒ͭͣ T̘̟̼̉̈́͐͋͌̊E̮̟͈̣̖̰̩̹͈̾ͨ̑͑A̘̫͈̭͌͛͌̇̇̍M̘͈̺̪͓̺ͩ͂̾ͪ̀̋ H͚̖̜̍̃͐A̘̫͈̭͌͛͌̇̇̍C͔ͣͦ́́͂ͅK̲̱̠̞̖ͧ̔͊̿̑ͯͅ B͎̣̫͈̥̗͒͌̃͑̔̾ͅO̜̓̇ͫ̉͊ͨT̘̟̼̉̈́͐͋͌̊ 
 
-★ CHAT RELATED ★
-● Spamg[on/off][no][txt]
-● Spam add:[text]
-● Spam change:[text]
-● Spam start:[number]
-● Say [text]
-● Me
-● Speed
-● Debug speed
-● My mid
-● Gcreator
-● Halo
-● Bot contact
-● Bot mid
-● Creator
-● System
-● Iconfig
-● Kernel
-● Cpu
-● Responsename
-● Help
-● Mc:[mid]
-
-★ UTILITY ★
-● Lurking
-● Lurking result
-● Link open
-● Link close
-● Gurl
-● Remove chat
-● Bot restart
-
-★ CHAT RELATED ★
-● Lyric [][]
-● Music [][]
-● Wiki [text]
-● Vidio [text]
-● Youtube [text]
-● Instagram [text]
-● Translate-idn [text]
-● Translate-eng [text]
-● Translate-thai [text]
-● Translate-japan [text]
-● Emoji [expression]
-● Info @[name]
-● Ping
-● Time
-● apakah
-  [kerang ajaib]
-● Sticker [expression]
-● Mention all
-
-★ BROADCASTING ★
-● Pm cast   [text]
-● Broadcast [text]
-● Spam @[name]
-
-★ special command ★
-● Turn off bots
-=======================
-SPECIAL THANKS TO:
-卂ㄚ卂几卂🐼
-=======================
+My Creator line.me/ti/p/~ebisuindo
+My Contact line.me/ti/p/~@enr7503k
 """
 KAC=[cl,ki,kk,kc,ks,kt]
 mid = cl.getProfile().mid
