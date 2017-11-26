@@ -3,7 +3,7 @@
 import LINETCR
 from LINETCR.lib.curve.ttypes import *
 from datetime import datetime
-import time, random, sys, re, os, json, subprocess, threading, string, codecs, requests, tweepy, ctypes, urllib, urllib2
+import time,random,sys,json,codecs,threading,glob,re
 
 #Mr X
 cl = LINETCR.LINE()
